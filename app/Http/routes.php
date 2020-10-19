@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/tasks', 'TaskController@index');
 Route::post('/task', 'TaskController@store');
 Route::delete('/task/{task}', 'TaskController@destroy');
-Route::update('task/{task}', 'TaskController@update');
+Route::post('task/{task}', 'TaskController@update');
 
 // Маршруты аутентификации...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
